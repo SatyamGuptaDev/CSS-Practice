@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">TRAVEL</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="video.mp4" muted loop autoplay height="720px"></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus illo at voluptates iste quisquam doloremque pariatur doloribus quasi. Nulla at reiciendis quis, officia, saepe alias debitis dignissimos quo voluptatibus earum ducimus amet neque totam inventore velit eos a beatae? Recusandae consectetur laudantium, deserunt fugiat necessitatibus earum magni labore tempore. Rem.</p>
+            <a href="#">Explore</a>
+        </div>
+        <div class="social">
+
+            <li><a href="#"><img src="facebook.png" alt=""></li>
+</a>            <li><a href="#"><img src="twitter.png" alt=""></li>
+ </a>           <li><a href="#"><img src="instagram.png" alt=""></li></a>
+</div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News </a></li>
+            <li><a href="">Destination </a></li>
+            <li><a href="">Blogs</a></li>
+
+            <li><a href="">Contact</a></li>
+
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+        
+        menuToggle.addEventListener('click', () =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

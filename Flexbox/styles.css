@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+
+}
+.flex-container{
+    background-color: rgba(137, 43, 226, 0.514);
+    display: flex;
+    
+    
+    
+    
+    
+     /* justify-content: space-between; */
+    /* Justify content is always on the main axis. */ 
+
+    /* align-items: center; */
+    /* Align items is always on the cross axis. */
+
+    /* flex-wrap: wrap ; */
+    /*Wrap:  Whenever it cant have space to put it in one line it sends the extra element to next line  */
+}
+.item{
+
+    width: 100px;
+    height: 100px;
+    background: rgb(48, 12, 156);
+    margin: 10px;
+    color: aliceblue;
+
+
+    /* To center an element */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    /* flex: fex-grow flex shrink fex-basis; */
+    flex: 1 0 200px;
+}
+.item:nth-of-type(3){
+    /* order: 2; */
+    /* align-self: end; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 2; */
+
+}
+
+.item:nth-of-type(2){
+    /* order: 1; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 1; */
+
+}
+
+.item:nth-of-type(1){
+    /* order: 3; */
+    /* flex-grow: 1; */
+    /* flex-basis: 200px; */
+    /* flex-shrink: 3; */
+
+
+}
